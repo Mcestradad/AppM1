@@ -550,10 +550,10 @@ top: 49px;
 
 
 position: absolute;
-width: 103px;
-height: 31px;
+width: 100px;
+height: 28px;
 left: calc(50% - 103px/2 + 1px);
-top: calc(50% - 31px/2 + 10px);
+top: 328px;
 
 font-family: 'Raleway';
 font-style: normal;
@@ -575,7 +575,7 @@ position: absolute;
 width: 237px;
 height: 97px;
 left: calc(50% - 237px/2 - 48px);
-top: calc(50% - 97px/2 - 52px);
+top: 220px;
 
 font-family: 'Raleway';
 font-style: normal;
@@ -715,3 +715,106 @@ letter-spacing: 0.01em;
 color: #FFFFFF;
 
 }
+
+.LineaUn{
+position: absolute;
+width: 375.01px;
+height: 0px;
+left: 0px;
+top: 340px;
+
+border: 1px solid #7F8386;
+}
+
+.LineaDo{
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 376px;
+    
+    border: 1px solid #7F8386;
+}
+
+.LineaTr{
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 470px;
+    
+    border: 1px solid #7F8386;
+}
+
+.LineaCu{
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 570px;
+    
+    border: 1px solid #7F8386;
+}
+
+.Grup8{
+    /* Group 6 */
+    
+    position: absolute;
+    width: 332.96px;
+    height: 46.35px;
+    left: 20px;
+    top: 570px;
+    
+    }
+    .ToUrbano{
+    /* Salsa $ 80.000,00 */
+    
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* or 133% */
+    letter-spacing: 0.01em;
+    
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    
+    }
+    
+    .ToGrup3{
+    /* Group 5 */
+    
+    position: absolute;
+    width: 103.88px;
+    height: 38.98px;
+    left: 300px;
+    top: 10px;
+    }
+    
+    
+    
+    .ToAdd3{
+    /* Agendar */
+    width: 81.34px;
+    height: 23.77px;
+    position: absolute;
+    width: 103.88px;
+    height: 38.98px;
+    left: 215px;
+    top: 25px;
+    
+    background: #FEA700;
+    border-radius: 16px;
+    
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.01em;
+    
+    color: #FFFFFF;
+    
+    }
