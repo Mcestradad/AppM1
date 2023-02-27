@@ -1,3 +1,79 @@
+/*ESTOS SON ESTILOS COMPARTIDOS*/
+
+.Fram {
+
+    box-sizing: border-box;
+    
+    position: relative;
+    width: 375px;
+    height: 667px;
+    
+    background: #D9DAE7;
+    border: 3px solid #000000;
+    }
+    
+/* Line 1 */
+
+.Line {
+
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 601px;
+    
+    border: 1px solid #C0C1C6;
+    
+    }
+
+
+    .Menu {
+        position: absolute;
+        top: 615px;    
+        width: 375px;
+        height: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px; /* espacio entre imágenes */
+        
+        }
+        
+        .Menu img {
+        max-width: 100%;
+        height: auto;
+        }
+        
+
+    /* Line 8 */
+.Inner {
+    position: absolute;
+    height: 0px;
+    left: 0px;
+    right: 1px;
+    top: calc(50% - 0px/2 + 132.5px);
+    
+    border: 1px solid #C0C1C6;
+    transform: rotate(0.15deg);
+    }
+    
+    
+    .Volver {
+    /* arrow 2 */
+    
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: calc(50% - 36px/2 - 159.5px);
+    top: calc(50% - 36px/2 - 306.5px);
+    
+    background: url(arrow.png);
+    filter: drop-shadow(0px 2px 0px #FFFFFF);
+    border-radius: 1px;
+    }
+
+/*AQUI TERMINAN LOS ESTILOS COMPARTIDOS*/
+
+
 /* #framInicial */
 
 .FramInicial {
@@ -77,23 +153,10 @@ left: 88px;
 top: 391px;
 
 }
+/*HASTA ACA VA LA PAG fRAMiNICIAL*/
 
 
 /* framInicial(login) */
-
-.Fram {
-
-box-sizing: border-box;
-
-position: relative;
-width: 375px;
-height: 667px;
-
-background: #D9DAE7;
-border: 3px solid #000000;
-}
-
-
 /* Rectangle 8 */
 
 .RectangLI1 {
@@ -147,24 +210,6 @@ font-size: 23px;
 line-height: 40px;
 /* identical to box height, or 174% */
 letter-spacing: 0.01em;
-
-
-
-}
-
-
-
-/* Line 1 */
-
-.Line {
-
-position: absolute;
-width: 375.01px;
-height: 0px;
-left: 0px;
-top: 601px;
-
-border: 1px solid #C0C1C6;
 
 }
 /* Group 24 */
@@ -220,6 +265,8 @@ letter-spacing: 0.01em;
 
 color: #FFF023;
 }
+
+/*HASTA ACÁ VA LA PAG fRAMiNIlOGIN*/
 
 /* Group 24 */
 
@@ -379,30 +426,10 @@ background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54
 border-radius: 13px;
 }
 
-.Menu {
-position: absolute;
-top: 615px;    
-width: 375px;
-height: 60px;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 30px; /* espacio entre imágenes */
-
-}
-
-.Menu img {
-max-width: 100%;
-height: auto;
-}
-
-
 
 /*.Checkbox input[type="checkbox"] {
 	
 }*/
-
-
-
 
 .TxtCB {
 /* Bachata */
@@ -420,6 +447,8 @@ letter-spacing: 0.01em;
 
 color: #FDD900;
 }
+
+/*HASTA ACA VA LA PAG INDEX fRAMpRINCIPAL */
 
 .Contactos {
 position: absolute;
@@ -507,32 +536,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
-/* Line 8 */
-.Inner {
-position: absolute;
-height: 0px;
-left: 0px;
-right: 1px;
-top: calc(50% - 0px/2 + 132.5px);
-
-border: 1px solid #C0C1C6;
-transform: rotate(0.15deg);
-}
-
-
-.Volver {
-/* arrow 2 */
-
-position: absolute;
-width: 36px;
-height: 36px;
-left: calc(50% - 36px/2 - 159.5px);
-top: calc(50% - 36px/2 - 306.5px);
-
-background: url(arrow.png);
-filter: drop-shadow(0px 2px 0px #FFFFFF);
-border-radius: 1px;
-}
+/*HASTA ACA VA LA PAG fRAMpRINeXPLORE*/
 
 .LogTh2{
 /* Group 24 */
@@ -818,3 +822,4 @@ border: 1px solid #7F8386;
     color: #FFFFFF;
     
     }
+    /*HASTA ACA VA LA PAG fRAMsERVpREC*/
