@@ -806,4 +806,276 @@ border: 1px solid #7F8386;
     color: #FFFFFF;
     
     }
+
     /*HASTA ACA VA LA PAG fRAMsERVpREC*/
+
+
+
+
+.LineAgenda{
+/* Line 12 */
+position: absolute;
+height: 0px;
+left: 0px;
+right: -0.13px;
+top: 47px;
+
+border: 1px solid #C0C1C6;
+}
+
+.Calendario{
+/* Frame */
+position: absolute;
+width: 251px;
+height: 303px;
+left: calc(50% - 251px/2 + 3px);
+top: calc(50% - 303px/2 - 121px);
+
+background: rgba(175, 4, 255, 0.12);
+}
+
+.LineCal{
+/* Line 3 */
+position: absolute;
+width: 386px;
+height: 0px;
+left: calc(50% - 386px/2 - 6.5px);
+top: calc(50% - 0px/2 + 41.5px);
+
+border: 1px solid #C0C1C6;
+}
+
+.TxtHorario{
+/* Horarios */
+position: absolute;
+width: 72px;
+height: 24px;
+left: calc(50% - 72px/2 - 137.5px);
+top: calc(50% - 24px/2 + 64.5px);
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.01em;
+
+color: #380047;
+}
+
+.BtnH1{
+    /* Group 12 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 78px;
+    height: 43px;
+    left: 20px;
+    top: 430px;
+    
+    background: #D9DAE7;
+    border: 1px solid #380047;
+    border-radius: 11px;
+
+font-family: 'Sarala';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height, or 141% */
+letter-spacing: 0.01em;
+
+color: #BA54C2;
+
+
+}
+
+.BtnH2{
+    /* Group 15 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 78px;
+    height: 43px;
+    left: 100px;
+    top: 430px;
+    
+background: #751E7A;
+border: 1px solid #380047;
+border-radius: 11px;
+
+font-family: 'Sarala';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height, or 141% */
+letter-spacing: 0.01em;
+
+color: #D9DAE7;
+
+
+}
+
+.BtnH3{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 78px;
+    height: 43px;
+    left: 180px;
+    top: 430px;
+   
+    
+    background: #D9DAE7;
+    border: 1px solid #380047;
+    border-radius: 11px;
+
+font-family: 'Sarala';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height, or 141% */
+letter-spacing: 0.01em;
+
+color: #BA54C2;
+
+
+}
+
+.BtnH4{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 78px;
+    height: 43px;
+    left: 260px;
+    top: 430px;
+    
+    background: #D9DAE7;
+    border: 1px solid #380047;
+    border-radius: 11px;
+
+font-family: 'Sarala';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height, or 141% */
+letter-spacing: 0.01em;
+
+color: #BA54C2;
+
+
+}
+
+.NewGroup{
+    position: absolute;
+width: 201.53px;
+height: 45px;
+left: 20px;
+top: 460px;
+
+font-family: 'Sarala';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* or 133% */
+
+letter-spacing: 0.01em;
+
+}
+
+.Lin1{
+    /* Line 9 */
+
+
+position: absolute;
+width: 374px;
+height: 0px;
+left: 0px;
+top: 470px;
+
+border: 1px solid #C0C1C6;
+}
+
+.Lin2{
+    /* Line 2 */
+
+
+position: absolute;
+width: 374px;
+height: 0px;
+left: calc(50% - 374px/2 - 0.5px);
+top: calc(50% - 0px/2 + 230.5px);
+
+border: 1px solid #C0C1C6;
+transform: rotate(-0.15deg);
+
+}
+
+.Directory{
+    /* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 106px;
+height: 48px;
+right: 11px;
+top: calc(50% - 48px/2 + 187.5px);
+}
+
+.Confirm{
+    /* Rectangle 8 */
+
+position: absolute;
+width: 332px;
+height: 60px;
+left: calc(50% - 332px/2 - 0.5px);
+top: calc(50% - 60px/2 + 280.5px);
+
+background: #751E7A;
+border-radius: 15px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+/* identical to box height, or 200% */
+
+letter-spacing: 0.01em;
+
+color: #FDD900;
+}
+
+
+.MisReservas {
+    position: absolute;
+    height: 31px;
+    left: 97px;
+    right: 81px;
+    top: 4px;
+    
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+    /* or 182% */
+    
+    letter-spacing: 0.01em;
+    
+    color: #380047;
+    }
