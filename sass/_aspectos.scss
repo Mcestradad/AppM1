@@ -1,12 +1,62 @@
-/* #framInicial */
+/*ESTOS SON ESTILOS COMPARTIDOS*/
 
-.FramInicial {
-
+.Fram {
     box-sizing: border-box;
     position: relative;
     width: 375px;
     height: 667px;
-    background: linear-gradient(180deg, rgba(255, 124, 211, 0.2) 0%, rgba(82, 40, 68, 0.064656) 67.67%, rgba(0, 0, 0, 0) 100%), #FFFFFF;
-    border: 1px solid #000000;
-    }
+    background: #D9DAE7;
+    border: 3px solid #000000;
+}
 
+/* Line 1 */
+
+.Line {
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 601px;
+    border: 1px solid #C0C1C6;
+}
+
+
+.Menu {
+    position: absolute;
+    top: 615px;
+    width: 375px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    /* espacio entre imágenes */
+}
+
+.Menu img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Line 8 */
+.Inner {
+    position: absolute;
+    height: 0px;
+    left: 0px;
+    right: 1px;
+    top: calc(50% - 0px/2 + 132.5px);
+    border: 1px solid #C0C1C6;
+    transform: rotate(0.15deg);
+}
+
+
+.Volver {
+    /* arrow 2 */
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: calc(50% - 36px/2 - 159.5px);
+    top: calc(50% - 36px/2 - 306.5px);
+    background: url(arrow.png);
+    filter: drop-shadow(0px 2px 0px #FFFFFF);
+    border-radius: 1px;
+}
