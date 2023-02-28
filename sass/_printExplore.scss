@@ -1,0 +1,70 @@
+.Contactos {
+    position: absolute;
+    height: 31px;
+    left: 110px;
+    right: 110px;
+    top: 41px;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+    /* or 182% */
+    letter-spacing: 0.01em;
+    color: #380047;
+}
+
+/* Rectangle 10 */
+
+.RectangBuscar {
+    position: absolute;
+    width: 332px;
+    height: 60px;
+    left: calc(50% - 332px/2 + 0.5px);
+    top: 127px;
+    background: #380047;
+    border-radius: 15px;
+    /* Log In */
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    /* identical to box height, or 174% */
+    letter-spacing: 0.01em;
+    z-index: 1;
+    color: #FFF023;
+}
+
+.Buscar {
+    position: absolute;
+    width: 35px;
+    height: 38px;
+    left: 297px;
+    top: 139px;
+    z-index: 3;
+    opacity: 100;
+}
+/* Group 33 */
+.Grupo {
+    position: absolute;
+    width: 384px;
+    height: 351.73px;
+    left: 0px;
+    top: 209px;
+}
+/* Grupo IE.San Diego Av. Guayabal Itagüí- Área Metropolitana (11)90000-0000 */
+.ContactoData {
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    letter-spacing: 0.01em;
+    color: #380047;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+/*HASTA ACA VA LA PAG fRAMpRINeXPLORE*/
