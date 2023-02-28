@@ -56,7 +56,14 @@
     height: 36px;
     left: calc(50% - 36px/2 - 159.5px);
     top: calc(50% - 36px/2 - 306.5px);
-    background: url(arrow.png);
+    background: url(/Img/arrow.png);
     filter: drop-shadow(0px 2px 0px #FFFFFF);
     border-radius: 1px;
+}
+
+button{
+    &:hover{
+        opacity: 70%;
+         cursor: pointer;
+        }
 }

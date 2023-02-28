@@ -3,73 +3,79 @@
 .Fram {
 
     box-sizing: border-box;
-    
+
     position: relative;
     width: 375px;
     height: 667px;
-    
+
     background: #D9DAE7;
     border: 3px solid #000000;
-    }
-    
+}
+
 /* Line 1 */
 
 .Line {
 
     position: absolute;
-    width: 375.01px;
+    width: 375px;
     height: 0px;
     left: 0px;
     top: 601px;
-    
+
     border: 1px solid #C0C1C6;
-    
-    }
+
+}
 
 
-    .Menu {
-        position: absolute;
-        top: 615px;    
-        width: 375px;
-        height: 60px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 30px; /* espacio entre imágenes */
-        
-        }
-        
-        .Menu img {
-        max-width: 100%;
-        height: auto;
-        }
-        
+.Menu {
+    position: absolute;
+    top: 615px;
+    width: 375px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    /* espacio entre imágenes */
 
-    /* Line 8 */
+}
+
+.Menu img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Line 8 */
 .Inner {
     position: absolute;
     height: 0px;
     left: 0px;
     right: 1px;
     top: calc(50% - 0px/2 + 132.5px);
-    
+
     border: 1px solid #C0C1C6;
     transform: rotate(0.15deg);
-    }
-    
-    
-    .Volver {
+}
+
+
+.Volver {
     /* arrow 2 */
-    
+
     position: absolute;
     width: 36px;
     height: 36px;
     left: calc(50% - 36px/2 - 159.5px);
     top: calc(50% - 36px/2 - 306.5px);
-    
-    background: url(arrow.png);
+
+    background: url(/Img/arrow.png);
     filter: drop-shadow(0px 2px 0px #FFFFFF);
     border-radius: 1px;
-    }
+}
+
+button:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
 
 /*AQUI TERMINAN LOS ESTILOS COMPARTIDOS*/
 
@@ -78,65 +84,66 @@
 
 .FramInicial {
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-position: relative;
-width: 375px;
-height: 667px;
+    position: relative;
+    width: 375px;
+    height: 667px;
 
-background: linear-gradient(180deg, rgba(255, 124, 211, 0.2) 0%, rgba(82, 40, 68, 0.064656) 67.67%, rgba(0, 0, 0, 0) 100%), #FFFFFF;
-border: 1px solid #000000;
+    background: linear-gradient(180deg, rgba(255, 124, 211, 0.2) 0%, rgba(82, 40, 68, 0.064656) 67.67%, rgba(0, 0, 0, 0) 100%), #FFFFFF;
+    border: 1px solid #000000;
 }
 
 /* Logo */
 
 .Logo {
 
-position: absolute;
-width: 257px;
-height: 258px;
-left: 59px;
-top: 95px;
-/* Ellipse 1 */
-box-sizing: border-box;
-position: absolute;
-width: 257px;
-height: 258px;
-left: 59px;
-top: 95px;
-background: url(5.png);
-border: 0px solid #000000;
+    position: absolute;
+    width: 257px;
+    height: 258px;
+    left: 59px;
+    top: 95px;
+    /* Ellipse 1 */
+    box-sizing: border-box;
+    position: absolute;
+    width: 257px;
+    height: 258px;
+    left: 59px;
+    top: 95px;
+    background: url(/Img/home5.png);
+    border: 0px solid #000000;
 }
 
 .Rect {
-/* Group 23 */
+    /* Group 23 */
 
-position: absolute;
-width: 228px;
-height: 93px;
-left: 88px;
-top: 391px;
-/* Cargando... */
-position: absolute;
-width: 187px;
-height: 41px;
-left: 109px;
-top: 417px;
-font-family: 'Snippet';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 41px;
-color: #751E7A;
-text-shadow: 0px 4px 4px rgba(56, 0, 71, 0.1);
-/* Rectangle 18 */
-position: absolute;
-width: 228px;
-height: 93px;
-left: 88px;
-top: 391px;
+    position: absolute;
+    width: 228px;
+    height: 93px;
+    left: 88px;
+    top: 391px;
+    /* Cargando... */
+    position: absolute;
+    width: 187px;
+    height: 41px;
+    left: 109px;
+    top: 417px;
+    font-family: 'Snippet';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    color: #751E7A;
+    text-shadow: 0px 4px 4px rgba(56, 0, 71, 0.1);
+    /* Rectangle 18 */
+    position: absolute;
+    width: 228px;
+    height: 93px;
+    left: 88px;
+    top: 391px;
 
 }
+
 /*HASTA ACA VA LA PAG fRAMiNICIAL*/
 
 
@@ -145,25 +152,25 @@ top: 391px;
 
 .RectangLI1 {
 
-position: absolute;
-width: 303px;
-height: 60px;
-left: 36px;
-top: 255px;
+    position: absolute;
+    width: 303px;
+    height: 60px;
+    left: 36px;
+    top: 255px;
 
-background: #BA54C2;
-border-radius: 15px;
+    background: #BA54C2;
+    border-radius: 15px;
 
 
-/* User */
+    /* User */
 
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 23px;
-line-height: 40px;
-/* identical to box height, or 174% */
-letter-spacing: 0.01em;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    /* identical to box height, or 174% */
+    letter-spacing: 0.01em;
 
 
 
@@ -173,81 +180,108 @@ letter-spacing: 0.01em;
 
 .RectangLI2 {
 
-position: absolute;
-width: 303.68px;
-height: 60px;
-left: 36px;
-top: 340.16px;
+    position: absolute;
+    width: 303.68px;
+    height: 60px;
+    left: 36px;
+    top: 340.16px;
 
-background: #BA54C2;
-border-radius: 15px;
-transform: rotate(-0.03deg);
+    background: #BA54C2;
+    border-radius: 15px;
+    transform: rotate(-0.03deg);
 
 
 
-/* Password */
+    /* Password */
 
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 23px;
-line-height: 40px;
-/* identical to box height, or 174% */
-letter-spacing: 0.01em;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    /* identical to box height, or 174% */
+    letter-spacing: 0.01em;
 
 }
+
 /* Group 24 */
 
 .ScLogo {
 
-position: absolute;
-width: 198px;
-height: 196.6px;
-left: 89px;
-top: 40px;
+    position: absolute;
+    width: 198px;
+    height: 196.6px;
+    left: 89px;
+    top: 40px;
 
 
 
-/* Ellipse 1 */
+    /* Ellipse 1 */
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-position: absolute;
-width: 198px;
-height: 196.6px;
-left: 89px;
-top: 40px;
+    position: absolute;
+    width: 198px;
+    height: 196.6px;
+    left: 89px;
+    top: 40px;
 
-border: 0px solid #000000;
+    border: 0px solid #000000;
 
 }
 
 /* Rectangle 10 */
 
 .RectangLOGIN {
-position: absolute;
-width: 302.29px;
-height: 60px;
-left: 36.42px;
-top: 429.15px;
+    position: absolute;
+    width: 302.29px;
+    height: 60px;
+    left: 36.42px;
+    top: 429.15px;
 
-background: #380047;
-border-radius: 15px;
-transform: rotate(-0.03deg);
+    background: #380047;
+    border-radius: 15px;
+    transform: rotate(-0.03deg);
 
 
-/* Log In */
+    /* Log In */
 
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 23px;
-line-height: 40px;
-/* identical to box height, or 174% */
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    /* identical to box height, or 174% */
 
-letter-spacing: 0.01em;
+    letter-spacing: 0.01em;
 
-color: #FFF023;
+    color: #FFF023;
+}
+
+.RectangLOGIN2 {
+    position: absolute;
+    width: 302.29px;
+    height: 60px;
+    left: 36.42px;
+    top: 529.15px;
+
+    background: #380047;
+    border-radius: 15px;
+    transform: rotate(-0.03deg);
+
+
+    /* Log In */
+
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    /* identical to box height, or 174% */
+
+    letter-spacing: 0.01em;
+
+    color: #FFF023;
 }
 
 /*HASTA ACÁ VA LA PAG fRAMiNIlOGIN*/
@@ -255,159 +289,160 @@ color: #FFF023;
 /* Group 24 */
 
 .ThLogo {
-position: absolute;
-width: 76.54px;
-height: 76px;
-left: 13px;
-top: 18px;
+    position: absolute;
+    width: 76.54px;
+    height: 76px;
+    left: 13px;
+    top: 18px;
 }
 
 /* Line 4 */
 
 .UpLine {
-position: absolute;
-width: 375.01px;
-height: 0px;
-left: 0px;
-top: 102px;
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 102px;
 
-border: 1px solid #7F8386;
+    border: 1px solid #7F8386;
 }
 
 /* Rectangle 19 */
 
-.Servicios{
-position: absolute;
-width: 315.55px;
-height: 44.54px;
-left: 29.75px;
-top: 111.44px;
+.Servicios {
+    position: absolute;
+    width: 315.55px;
+    height: 44.54px;
+    left: 29.75px;
+    top: 111.44px;
 
-background: #751E7A;
+    background: #751E7A;
 
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 23px;
-line-height: 40px;
-/* or 174% */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 40px;
+    /* or 174% */
 
-text-align: center;
-letter-spacing: 0.01em;
+    text-align: center;
+    letter-spacing: 0.01em;
 
-color: #FDD900;
+    color: #FDD900;
 
-border: 1px solid #000000;
+    border: 1px solid #000000;
 }
+
 /* Rectangle 11 */
 
 .ServRect1 {
-position: absolute;
-width: 84px;
-height: 100.33px;
-left: 43px;
-top: 200px;
-    
+    position: absolute;
+    width: 84px;
+    height: 100.33px;
+    left: 43px;
+    top: 200px;
 
-background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
-border-radius: 13px;
+
+    background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
+    border-radius: 13px;
 }
 
-.ServRect2{
-position: absolute;
-width: 84px;
-height: 100.33px;
-left: 146px;
-top: 200px;
-    
+.ServRect2 {
+    position: absolute;
+    width: 84px;
+    height: 100.33px;
+    left: 146px;
+    top: 200px;
 
-background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
-border-radius: 13px;
+
+    background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
+    border-radius: 13px;
 }
 
-.ServRect3{
-position: absolute;
-width: 84px;
-height: 100.33px;
-left: 250px;
-top: 200px;
-        
-    
-background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
-border-radius: 13px;
+.ServRect3 {
+    position: absolute;
+    width: 84px;
+    height: 100.33px;
+    left: 250px;
+    top: 200px;
+
+
+    background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
+    border-radius: 13px;
 }
 
 .ServRect4 {
-position: absolute;
-width: 84px;
-height: 100.33px;
-left: 43px;
-top: 320px;
-    
+    position: absolute;
+    width: 84px;
+    height: 100.33px;
+    left: 43px;
+    top: 320px;
 
-background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
-border-radius: 13px;
+
+    background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
+    border-radius: 13px;
 }
 
-.ServRect5{
-position: absolute;
-width: 84px;
-height: 100.33px;
-left: 146px;
-top: 320px;
-    
+.ServRect5 {
+    position: absolute;
+    width: 84px;
+    height: 100.33px;
+    left: 146px;
+    top: 320px;
 
-background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
-border-radius: 13px;
+
+    background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
+    border-radius: 13px;
 }
 
-.ServRect6{
-position: absolute;
-width: 84px;
-height: 100.33px;
-left: 250px;
-top: 320px;
-        
-    
-background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
-border-radius: 13px;
+.ServRect6 {
+    position: absolute;
+    width: 84px;
+    height: 100.33px;
+    left: 250px;
+    top: 320px;
+
+
+    background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
+    border-radius: 13px;
 }
 
 .ServRect7 {
-position: absolute;
-width: 84px;
-height: 100.33px;
-left: 43px;
-top: 440px;
-    
+    position: absolute;
+    width: 84px;
+    height: 100.33px;
+    left: 43px;
+    top: 440px;
 
-background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
-border-radius: 13px;
+
+    background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
+    border-radius: 13px;
 }
 
-.ServRect8{
-position: absolute;
-width: 84px;
-height: 100.33px;
-left: 146px;
-top: 440px;
-    
+.ServRect8 {
+    position: absolute;
+    width: 84px;
+    height: 100.33px;
+    left: 146px;
+    top: 440px;
 
-background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
-border-radius: 13px;
+
+    background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
+    border-radius: 13px;
 }
 
-.ServRect9{
-position: absolute;
-width: 84px;
-height: 100.33px;
-left: 250px;
-top: 440px;
-        
-opacity: 0.5;
-background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
-border-radius: 13px;
+.ServRect9 {
+    position: absolute;
+    width: 84px;
+    height: 100.33px;
+    left: 250px;
+    top: 440px;
+
+    opacity: 0.5;
+    background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
+    border-radius: 13px;
 }
 
 
@@ -416,347 +451,180 @@ border-radius: 13px;
 }*/
 
 .TxtCB {
-/* Bachata */
-text-align: center;
+    /* Bachata */
+    text-align: center;
 
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
 
-letter-spacing: 0.01em;
+    letter-spacing: 0.01em;
 
-color: #FDD900;
+    color: #FDD900;
 }
 
 /*HASTA ACA VA LA PAG INDEX fRAMpRINCIPAL */
 
 .Contactos {
-position: absolute;
-height: 31px;
-left: 110px;
-right: 110px;
-top: 41px;
+    position: absolute;
+    height: 31px;
+    left: 110px;
+    right: 110px;
+    top: 41px;
 
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 40px;
-/* or 182% */
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+    /* or 182% */
 
-letter-spacing: 0.01em;
+    letter-spacing: 0.01em;
 
-color: #380047;
+    color: #380047;
 }
 
 /* Rectangle 10 */
 
 .RectangBuscar {
-position: absolute;
-width: 332px;
-height: 60px;
-left: calc(50% - 332px/2 + 0.5px);
-top: 127px;
+    position: absolute;
+    width: 332px;
+    height: 60px;
+    left: calc(50% - 332px/2 + 0.5px);
+    top: 127px;
 
-background: #380047;
-border-radius: 15px;
+    background: #380047;
+    border-radius: 15px;
 
 
-/* Log In */
+    /* Log In */
 
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 23px;
-line-height: 40px;
-/* identical to box height, or 174% */
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    /* identical to box height, or 174% */
 
-letter-spacing: 0.01em;
-z-index: 1;
+    letter-spacing: 0.01em;
+    z-index: 1;
 
-color: #FFF023;
+    color: #FFF023;
 }
 
 .Buscar {
-position: absolute;
-width: 35px;
-height: 38px;
-left: 297px;
-top: 139px;
-z-index: 3;
-opacity: 100;
+    position: absolute;
+    width: 35px;
+    height: 38px;
+    left: 297px;
+    top: 139px;
+    z-index: 3;
+    opacity: 100;
 
 }
 
 
 /* Group 33 */
 .Grupo {
-position: absolute;
-width: 384px;
-height: 351.73px;
-left: 0px;
-top: 209px;
+    position: absolute;
+    width: 384px;
+    height: 351.73px;
+    left: 0px;
+    top: 209px;
 
 }
 
 /* Grupo IE.San Diego Av. Guayabal Itagüí- Área Metropolitana (11)90000-0000 */
 .ContactoData {
 
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-/* or 133% */
-letter-spacing: 0.01em;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    letter-spacing: 0.01em;
 
-color: #380047;
+    color: #380047;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
 /*HASTA ACA VA LA PAG fRAMpRINeXPLORE*/
 
-.LogTh2{
-/* Group 24 */
+.LogTh2 {
+    /* Group 24 */
 
 
-position: absolute;
-width: 167.38px;
-height: 166.2px;
-left: 109px;
-top: 49px;
+    position: absolute;
+    width: 167.38px;
+    height: 166.2px;
+    left: 109px;
+    top: 49px;
 }
 
 .ServiciosTPG {
-/* Servicios */
+    /* Servicios */
 
 
-position: absolute;
-width: 100px;
-height: 28px;
-left: calc(50% - 103px/2 + 1px);
-top: 328px;
+    position: absolute;
+    width: 100px;
+    height: 28px;
+    left: calc(50% - 103px/2 + 1px);
+    top: 328px;
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 40px;
-/* or 182% */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+    /* or 182% */
 
-letter-spacing: 0.01em;
+    letter-spacing: 0.01em;
 
-color: #FEA700;
+    color: #FEA700;
 
-border: 0px solid #000000;
-backdrop-filter: blur(2px);
+    border: 0px solid #000000;
+    backdrop-filter: blur(2px);
 }
 
 .ContactServ {
-position: absolute;
-width: 237px;
-height: 97px;
-left: calc(50% - 237px/2 - 48px);
-top: 220px;
+    position: absolute;
+    width: 237px;
+    height: 97px;
+    left: calc(50% - 237px/2 - 48px);
+    top: 220px;
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-/* or 133% */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
 
-letter-spacing: 0.01em;
+    letter-spacing: 0.01em;
 
-color: #751E7A;
+    color: #751E7A;
 }
 
-.Grup7{
+.Grup7 {
     /* Group 7 */
 
-position: absolute;
-width: 331.88px;
-height: 46.07px;
-left: 23px;
-top: 465px;
-}
-
-.ToMerengue{
-/* Merengue $ 80.000,00 */
-
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 20px;
-/* or 133% */
-letter-spacing: 0.01em;
-
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-
-
-}
-
-
-.Grup5{
-/* Group 5 */
-
-position: absolute;
-width: 103.88px;
-height: 38.98px;
-left: 200px;
-top: 20px;
-}
-
-
-
-.ToAdd2{
-/* Agendar */
-
-position: absolute;
-width: 103.88px;
-height: 38.98px;
-left: 10px;
-top: 10px;
-
-background: #FEA700;
-border-radius: 16px;
-
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 24px;
-/* identical to box height, or 133% */
-letter-spacing: 0.01em;
-
-color: #FFFFFF;
-
-}
-
-.Grup6{
-/* Group 6 */
-
-position: absolute;
-width: 332.96px;
-height: 46.35px;
-left: 20px;
-top: 370px;
-
-}
-.ToSalsa{
-/* Salsa $ 80.000,00 */
-
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 20px;
-/* or 133% */
-letter-spacing: 0.01em;
-
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-
-}
-
-.ToGrup4{
-/* Group 5 */
-
-position: absolute;
-width: 103.88px;
-height: 38.98px;
-left: 300px;
-top: 10px;
-}
-
-
-
-.ToAdd1{
-/* Agendar */
-width: 81.34px;
-height: 23.77px;
-position: absolute;
-width: 103.88px;
-height: 38.98px;
-left: 215px;
-top: 25px;
-
-background: #FEA700;
-border-radius: 16px;
-
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 24px;
-/* identical to box height, or 133% */
-letter-spacing: 0.01em;
-
-color: #FFFFFF;
-
-}
-
-.LineaUn{
-position: absolute;
-width: 375.01px;
-height: 0px;
-left: 0px;
-top: 340px;
-
-border: 1px solid #7F8386;
-}
-
-.LineaDo{
     position: absolute;
-    width: 375.01px;
-    height: 0px;
-    left: 0px;
-    top: 376px;
-    
-    border: 1px solid #7F8386;
+    width: 331.88px;
+    height: 46.07px;
+    left: 23px;
+    top: 465px;
 }
 
-.LineaTr{
-    position: absolute;
-    width: 375.01px;
-    height: 0px;
-    left: 0px;
-    top: 470px;
-    
-    border: 1px solid #7F8386;
-}
+.ToMerengue {
+    /* Merengue $ 80.000,00 */
 
-.LineaCu{
-    position: absolute;
-    width: 375.01px;
-    height: 0px;
-    left: 0px;
-    top: 570px;
-    
-    border: 1px solid #7F8386;
-}
-
-.Grup8{
-    /* Group 6 */
-    
-    position: absolute;
-    width: 332.96px;
-    height: 46.35px;
-    left: 20px;
-    top: 570px;
-    
-    }
-    .ToUrbano{
-    /* Salsa $ 80.000,00 */
-    
     font-family: 'Sarala';
     font-style: normal;
     font-weight: 400;
@@ -764,25 +632,90 @@ border: 1px solid #7F8386;
     line-height: 20px;
     /* or 133% */
     letter-spacing: 0.01em;
-    
-    
+
+
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    
-    }
-    
-    .ToGrup3{
+
+
+}
+
+
+.Grup5 {
     /* Group 5 */
-    
+
+    position: absolute;
+    width: 103.88px;
+    height: 38.98px;
+    left: 200px;
+    top: 20px;
+}
+
+
+
+.ToAdd2 {
+    /* Agendar */
+
+    position: absolute;
+    width: 103.88px;
+    height: 38.98px;
+    left: 10px;
+    top: 10px;
+
+    background: #FEA700;
+    border-radius: 16px;
+
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+}
+
+.Grup6 {
+    /* Group 6 */
+
+    position: absolute;
+    width: 332.96px;
+    height: 46.35px;
+    left: 20px;
+    top: 370px;
+
+}
+
+.ToSalsa {
+    /* Salsa $ 80.000,00 */
+
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* or 133% */
+    letter-spacing: 0.01em;
+
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.ToGrup4 {
+    /* Group 5 */
+
     position: absolute;
     width: 103.88px;
     height: 38.98px;
     left: 300px;
     top: 10px;
-    }
-    
-    
-    
-    .ToAdd3{
+}
+
+
+
+.ToAdd1 {
     /* Agendar */
     width: 81.34px;
     height: 23.77px;
@@ -791,10 +724,10 @@ border: 1px solid #7F8386;
     height: 38.98px;
     left: 215px;
     top: 25px;
-    
+
     background: #FEA700;
     border-radius: 16px;
-    
+
     font-family: 'Sarala';
     font-style: normal;
     font-weight: 400;
@@ -802,8 +735,113 @@ border: 1px solid #7F8386;
     line-height: 24px;
     /* identical to box height, or 133% */
     letter-spacing: 0.01em;
-    
+
     color: #FFFFFF;
-    
-    }
-    /*HASTA ACA VA LA PAG fRAMsERVpREC*/
+
+}
+
+.LineaUn {
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 340px;
+
+    border: 1px solid #7F8386;
+}
+
+.LineaDo {
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 376px;
+
+    border: 1px solid #7F8386;
+}
+
+.LineaTr {
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 470px;
+
+    border: 1px solid #7F8386;
+}
+
+.LineaCu {
+    position: absolute;
+    width: 375.01px;
+    height: 0px;
+    left: 0px;
+    top: 570px;
+
+    border: 1px solid #7F8386;
+}
+
+.Grup8 {
+    /* Group 6 */
+
+    position: absolute;
+    width: 332.96px;
+    height: 46.35px;
+    left: 20px;
+    top: 570px;
+
+}
+
+.ToUrbano {
+    /* Salsa $ 80.000,00 */
+
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* or 133% */
+    letter-spacing: 0.01em;
+
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.ToGrup3 {
+    /* Group 5 */
+
+    position: absolute;
+    width: 103.88px;
+    height: 38.98px;
+    left: 300px;
+    top: 10px;
+}
+
+
+
+.ToAdd3 {
+    /* Agendar */
+    width: 81.34px;
+    height: 23.77px;
+    position: absolute;
+    width: 103.88px;
+    height: 38.98px;
+    left: 215px;
+    top: 25px;
+
+    background: #FEA700;
+    border-radius: 16px;
+
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+}
+
+/*HASTA ACA VA LA PAG fRAMsERVpREC*/
