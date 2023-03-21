@@ -7,11 +7,78 @@
     position: relative;
     width: 375px;
     height: 667px;
-
+    
     background: #D9DAE7;
     border: 3px solid #000000;
 }
+/* */
+body{
+    display:flex;
+    align-items:center;
+  }
+  #frm_login{
+    width:250px;
+  }
+  #frm_login,#frm_registro{
+    /*display:none;*/
+    border:1px solid lightgrey;
+    border-radius:10px;
+    margin:auto;
 
+    
+  }
+  #frm_registro{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+  }
+
+
+  #btn_enviar_registrar{
+   margin:auto;
+  }
+  body,html{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+  }
+  #home{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+  }
+  #frm_login h5{
+    text-align:center;
+    font-family: 'Sarala';
+    color:#FDD900 ;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+  }
+  #frm_registro h5{
+    text-align:center;
+    font-family: 'Sarala';
+    color:#FDD900 ;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  #frm_login div{
+    margin-top:20px;
+    font-size:12px;
+    text-align:center;
+  }
+  
+  .ocultar{
+    display:none !important;
+  }
+  nav{
+    text-align:right;
+    padding:7px;
+  }
+/* --------------------------------------------------------*/
 /* Line 1 */
 
 .Line {
@@ -112,6 +179,7 @@ button:hover{
     top: 95px;
     background: url(/Img/home5.png);
     border: 0px solid #000000;
+
 }
 
 .Rect {
@@ -152,80 +220,48 @@ button:hover{
 
 .RectangLI1 {
 
-    position: absolute;
-    width: 303px;
-    height: 60px;
-    left: 36px;
-    top: 255px;
-
-    background: #BA54C2;
+    position: relative;
+    width: 70%;
+    height: 5%;
+    background: #de27eb;
     border-radius: 15px;
-
-
-    /* User */
-
+    transform: rotate(-0.03deg);
     font-family: 'Sarala';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 40px;
-    /* identical to box height, or 174% */
+    
+    font-size: 14px;
+    text-align: center;
     letter-spacing: 0.01em;
-
-
-
+    color: #FFF023;
 }
 
 /* Rectangle 9 */
 
 .RectangLI2 {
 
-    position: absolute;
-    width: 303.68px;
-    height: 60px;
-    left: 36px;
-    top: 340.16px;
-
-    background: #BA54C2;
+    position: relative;
+    width: 70%;
+    height: 15%;
+    background: #de27eb;
     border-radius: 15px;
     transform: rotate(-0.03deg);
-
-
-
-    /* Password */
-
     font-family: 'Sarala';
     font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
     /* identical to box height, or 174% */
     letter-spacing: 0.01em;
-
+    color: #FFF023;
 }
 
 /* Group 24 */
 
 .ScLogo {
 
-    position: absolute;
-    width: 198px;
-    height: 196.6px;
-    left: 89px;
-    top: 40px;
-
-
-
+    margin: 5%;
+    margin-left: 20%;
     /* Ellipse 1 */
-
     box-sizing: border-box;
-
-    position: absolute;
-    width: 198px;
-    height: 196.6px;
-    left: 89px;
-    top: 40px;
-
+    position:relative;
     border: 0px solid #000000;
 
 }
@@ -233,26 +269,16 @@ button:hover{
 /* Rectangle 10 */
 
 .RectangLOGIN {
-    position: absolute;
-    width: 302.29px;
-    height: 60px;
-    left: 36.42px;
-    top: 429.15px;
-
+    position:relative;
+    width: 80%;
+    height: 10%;
     background: #380047;
     border-radius: 15px;
     transform: rotate(-0.03deg);
-
-
-    /* Log In */
-
     font-family: 'Sarala';
     font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 40px;
-    /* identical to box height, or 174% */
-
+    font-size: 20px;
+    text-align: center;
     letter-spacing: 0.01em;
 
     color: #FFF023;
@@ -737,7 +763,7 @@ button:hover{
     letter-spacing: 0.01em;
 
     color: #FFFFFF;
-<<<<<<< HEAD
+
     
     }
 
@@ -765,7 +791,6 @@ height: 303px;
 left: calc(50% - 251px/2 + 3px);
 top: calc(50% - 303px/2 - 121px);
 
-background: rgba(175, 4, 255, 0.12);
 }
 
 .LineCal{
@@ -1013,7 +1038,7 @@ color: #FDD900;
     
     color: #380047;
     }
-=======
+
 
 
 
@@ -1122,4 +1147,27 @@ color: #FDD900;
 }
 
 /*HASTA ACA VA LA PAG fRAMsERVpREC*/
->>>>>>> 212d7c07fd52c6eb8baafaf22da19711eb6ab489
+
+
+.perfil{
+    display:inline-block;
+    width:70%;
+    height:70px;
+    padding:5px;
+    margin:10px;
+    border-radius:5px;
+    overflow:hidden;
+    font-size:100%;
+    background:#d1d2e9;
+    box-shadow: #000000 1px 1px 1px 1px;
+}
+#contenedor_perfil{
+    margin-top:40%;
+    margin-left: 10%;
+    width: 80%;
+    left: 6%;
+    position: absolute;
+  }
+  input#btn_cerrar_sesion {
+    left: 5%;
+}

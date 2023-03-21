@@ -1,0 +1,78 @@
+/*instrucciones generales*/
+* {
+    margin: auto;
+}
+
+/*cabecera de la página*/
+h1 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+/*div principal del calendario*/
+#calendario {
+    border: 1px double #AF92FF;
+    max-width: 536px;
+    background-color: rgba(174, 0, 255, 0.12);
+    text-align: center;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+/*tabla del calendario*/
+#diasc {
+    border: 1px solid #AF92FF;
+    border-collapse:
+        separate;
+    border-spacing: 4px;
+    border-radius: 5%;
+
+}
+
+#diasc th,
+#diasc td {
+    font: normal 9pt arial;
+    width: 70px;
+    height: 27px;
+    border-radius: 10%;
+}
+
+#diasc th {
+    color: #4d044d;
+    background-color: #cb81f5;
+}
+
+#diasc td {
+    color: #7c435c;
+}
+
+/*cabecera del calendario*/
+#anterior {
+    float: left;
+    width: 100px;
+    font: bold 12pt arial;
+    padding: 0.5em 0.1em;
+    cursor: pointer;
+    
+}
+
+#posterior {
+    float: right;
+    width: 100px;
+    font: bold 12pt arial;
+    padding: 0.5em 0.1em;
+    cursor: pointer;
+}
+
+#anterior:hover {
+    background-color: #BA54C2;
+}
+
+#posterior:hover {
+    background-color: #BA54C2;
+}
+
+#titulos {
+    font: normal 14pt "arial black";
+    padding: 0.2em;
+}

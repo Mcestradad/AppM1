@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/CSS.css">
     <link href='https://fonts.googleapis.com/css?family=Sarala' rel='stylesheet'>
+    <script src="js/main.js"></script>
+    <script src="js/perfil.js"></script>
     <style>
         ::placeholder {
-          color: #e0e62c;
+            color: #e0e62c;
         }
-      </style>
+    </style>
     <title>FramPrincipExplore</title>
 </head>
+
 <body>
     <div class="Fram">
         <img src="Img/ThLogo.png" alt="Logo" class="ThLogo">
-        <h1 class="Contactos">Contactos</h1>
+        <h1 class="Contactos">Mi Perfil</h1>
         <hr class="UpLine">
-        <div>
-            <input type="text" class="RectangBuscar" placeholder="Buscar">
-            <img class="Buscar" src="Img/home2.png" alt="Buscar">
-
+        <div id="contenedor_perfil">
+            <input type="button" value="Cerrar sesión" id="btn_cerrar_sesion"  class="RectangLI1" onclick="cerrarSesion()">
         </div>
-        <div class="Grupo">
-            <hr>
-            <H4 class="ContactoData" style="color: #380047;"><strong>
-                Juan Miguel
-            </strong>
-            </H4>
-            <h4 class="ContactoData" style="color: #751E7A;">Av. Guayabal
-                Itagüí- Área Metropolitana <br> (11)90000-0000
-            </h4>
-            
-        </div>
+        
         <hr class="Line">
         <div class="Menu">
             <a href="home.html">
                 <img src="Img/home5.png" alt="Home">
             </a>
             <a href="FramPrinExplore.html">
-                <img src="Img/home6.png" alt="Search">
+                <img src="Img/home2.png" alt="Search">
             </a>
             <a href="FramReservas.html">
                 <img src="Img/home3.png" alt="Calendar">
             </a>
             <a href="FramPerfil.html">
-                <img src="Img/home4.png" alt="Profile">
+                <img src="Img/home 4.png" alt="Profile">
             </a>
         </div>
     </div>
 </body>
+
 </html>
