@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/CSS.css">
     <link href='https://fonts.googleapis.com/css?family=Sarala' rel='stylesheet'>
+    <script src="js/contactos.js"></script>
     <style>
         ::placeholder {
-          color: #e0e62c;
+            color: #e0e62c;
         }
-      </style>
+    </style>
     <title>FramPrincipExplore</title>
 </head>
+
 <body>
     <div class="Fram">
         <img src="Img/ThLogo.png" alt="Logo" class="ThLogo">
         <h1 class="Contactos">Contactos</h1>
         <hr class="UpLine">
-        <div>
-            <input type="text" class="RectangBuscar" placeholder="Buscar">
-            <img class="Buscar" src="Img/home2.png" alt="Buscar">
+        <div  id="div_lista"  class="ocultar">
+
+            <div class="crud">
+                <input type="image" src="Img/add.png" alt="agregar" id="agregar_btn" onclick="abrirForm()">
+                <input type="image" src="Img/trash-bin.png" alt="eliminar" id="eliminar_btn" onclick="abrirRepaso()">
+                <p id="repaso" class="ocultar">Escoge al contacto que quieras eliminar.</p>
+    
+            </div>
+            <div class="Grupo" id="contenedor_contactos">
+                <hr>
+                <h4 class="ContactoData perfil"><strong>
+                        Juan Miguel <br>
+                    </strong>
+                    Itagüí- Área Metropolitana <br> (11)90000-0000
+                </h4>
+                <hr>
+            </div>
+        </div>
+
+        <div  id="form_contact_div" class="ocultar contenedor_perfil">
+
+            <form action="" id="form_contact">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre_contact" name="nombre_contact" required>
+                <label for="email_contact">Email:</label>
+                <input type="email" id="email_contact" name="email_contact" required>
+                <label for="telefono_contact">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono_contact" required>
+                <label for="direccion_contact">Dirección:</label>
+                <textarea id="direccion_contact" name="direccion_contact" required></textarea>
+                <button type="submit" id="guardar_contact_btn" onclick="cerrarForm()" >Enviar</button>
+            </form>
 
         </div>
-        <div class="Grupo">
-            <hr>
-            <H4 class="ContactoData" style="color: #380047;"><strong>
-                Juan Miguel
-            </strong>
-            </H4>
-            <h4 class="ContactoData" style="color: #751E7A;">Av. Guayabal
-                Itagüí- Área Metropolitana <br> (11)90000-0000
-            </h4>
-            
+        <div  id="form_contact_div_eliminar" class="ocultar contenedor_perfil">
+
+            <form action="" id="form_contact_eliminar">
+                <label for="nombre">Nombre del contacto a eliminar:</label>
+                <input type="text" id="nombre_contact" name="nombre_contact" required>
+                <button type="submit" id="guardar_contact_btn" onclick="cerrarRepaso()" >Enviar</button>
+            </form>
+
         </div>
         <hr class="Line">
         <div class="Menu">
@@ -51,4 +81,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/CSS.css">
+    <link href='https://fonts.googleapis.com/css?family=Sarala' rel='stylesheet'>
+    <script src="js/contactos1.js"></script>
+    <style>
+        ::placeholder {
+            color: #e0e62c;
+        }
+    </style>
+    <title>FramPrincipExplore</title>
+</head>
+
+<body>
+
+   
+    <div class="Fram">
+
+      
+
+        <img src="Img/ThLogo.png" alt="Logo" class="ThLogo">
+        <h1 class="Contactos">Contactos</h1>
+        <hr class="UpLine">
+        <div  id="form_contact_div" class="contenedor_perfil" style="margin-top: 50%;">
+
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+                
+                <button type="submit">Guardar</button>
+              </form>
+              
+              <ul id="lista-elementos"></ul>
+    
+        </div>
+        <div class="crud">
+            <input type="image" src="Img/add.png" alt="agregar" id="agregar_btn" onclick="abrirForm()">
+            <input type="image" src="Img/trash-bin.png" alt="eliminar" id="eliminar_btn">
+
+        </div>
+
+        <div class="Grupo" id="contenedor_contactos">
+           
+            <h4 class="ContactoData perfil"><strong>
+                    Juan Miguel <br>
+                </strong>
+                Itagüí- Área Metropolitana <br> (11)90000-0000
+            </h4>
+            <hr>
+
+
+        </div>
+
+       
+        <hr class="Line">
+        <div class="Menu">
+            <a href="home.html">
+                <img src="Img/home5.png" alt="Home">
+            </a>
+            <a href="FramPrinExplore.html">
+                <img src="Img/home6.png" alt="Search">
+            </a>
+            <a href="FramReservas.html">
+                <img src="Img/home3.png" alt="Calendar">
+            </a>
+            <a href="FramPerfil.html">
+                <img src="Img/home4.png" alt="Profile">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

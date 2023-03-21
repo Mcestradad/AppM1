@@ -104,7 +104,6 @@ function registrar(){
   };
   
   localStorage.setItem("usuario",JSON.stringify(usuario));
-  crearNodo(nombre.value,correo.value);
   alert("¡Muy bien, registro exitoso!")
   cambiarFormulario();
 }
