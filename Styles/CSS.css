@@ -1184,3 +1184,11 @@ color: #FDD900;
 #form_contact{
     margin-top: 50%;
 }
+
+.contenedor_form_contact{
+    margin-top:40%;
+    margin-left: 10%;
+    width: 80%;
+    left: 6%;
+    position: absolute;
+}

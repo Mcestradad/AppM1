@@ -3,9 +3,10 @@ let contador;
 let form;
 let form2;
 let btnEnviar;
-var datos = [];
+var datos_;
 
 window.onload = function () {
+    //localStorage.clear();
     contador = localStorage.getItem('contador');
     if (contador == null) {
         contador = 0;
@@ -14,14 +15,18 @@ window.onload = function () {
     document.getElementById("div_lista").classList.toggle("ocultar");
     form = document.getElementById('form_contact');
     btnEnviar = document.getElementById('guardar_contact_btn"');
-
     let temp = localStorage.getItem('contacto_1');
-    if (temp) {
-        datos = JSON.parse(temp);
-        console.log(datos);
-        pintarContactos();
+    if (temp !== undefined) {
+        console.log(temp);
+
+        if (temp) {
+            datos_ = JSON.parse(temp);
+            console.log(datos_);
+            pintarContactos();
+        }
     }
     agregar();
+    eliminar();
 }
 
 function abrirRepaso() {
@@ -47,8 +52,8 @@ function cerrarForm() {
 }
 
 function crearContacto(contacto) {
-    var nodo = '<h4 id="id_' + contador + '" class="ContactoData perfil"><strong>';
-    nodo += contacto.nombre + '<br></strong>';
+    var nodo = '<h4 id="id_' + contacto.nombre + '" class="ContactoData perfil"><strong>';
+    nodo += '<a href="FramServPrec.html">'+contacto.nombre+'</a><br></strong>';
     nodo += contacto.direccion + '<br>';
     nodo += contacto.celular + '</h4><hr>';
     contenedor_contactos.innerHTML += nodo;
@@ -59,20 +64,22 @@ function pintarContactos() {
     contenedor_contactos.innerHTML = "";
     num = JSON.parse(localStorage.getItem('contador'));
     console.log(num);
-    for (let i = 0; i < num; i++) {
+    for (let i = 1; i <= num; i++) {
         console.log("aquí entró #" + i);
         let patron = "contacto_" + i;
         console.log(patron);
 
-        let datos;
-        let temp = localStorage.getItem(patron);
-        if (temp) {
-            datos = JSON.parse(temp);
-            console.log(datos.nombre);
-            crearContacto(datos);
+
+        let temp = JSON.parse(localStorage.getItem(patron));
+        console.log(temp);
+        if (temp.nombre != "vacio") {
+            console.log(temp.nombre);
+            crearContacto(temp);
         } else {
-            console.log("no fueron leídos.");
-        }
+            console.log("ups")
+        };
+
+
     }
 }
 
@@ -105,32 +112,52 @@ function agregar() {
 
 
 function eliminar() {
-
-
     form2.addEventListener('submit', event => {
-
         event.preventDefault();
         event.stopPropagation();
         // Agregar un controlador de eventos al botón de envío
         // Obtener los datos del formulario
-        console.log("avr2");
+
         let num2 = JSON.parse(localStorage.getItem('contador'));
-        let nombre = document.getElementById("nombre_contact").value;
+        let nombre = document.getElementById("nombre_contact2").value;
         let tmp = 0;
-        for (let i = 0; i < num2; i++) {
+
+        for (let i = 1; i <= num2; i++) {
             let patron = "contacto_" + i;
             let contacto = JSON.parse(localStorage.getItem(patron));
-            if(contacto.nombre.value === nombre){
-                localStorage.removeItem(patron);
-                tmp=1;
+            console.log("esto es lo que se lee");
+            console.log(contacto);
+            console.log(contacto.nombre == nombre);
+
+
+
+            if (contacto.nombre == nombre && contacto != undefined) {
+                var userDataStr = localStorage.getItem(patron);
+
+                // Convertir la cadena JSON en un objeto JavaScript
+                var userData = JSON.parse(userDataStr);
+
+                // Mostrar el valor actual en la consola
+                console.log("Valor actual de 'userData': ", userData);
+
+                // Modificar el objeto userData
+                userData.nombre = "vacio";
+
+                // Convertir el objeto JavaScript modificado en una cadena JSON
+                var nuevoUserDataStr = JSON.stringify(userData);
+
+                // Almacenar el objeto como una cadena JSON en LocalStorage
+                localStorage.setItem(patron, nuevoUserDataStr);
+                tmp = 1;
+                break;
             }
         }
-        if(tmp==0){
+        if (tmp == 0) {
             alert("No hubo coincidencias.");
         }
 
         cerrarRepaso();
-        pintarNodos();
+        pintarContactos();
 
     }, false);
 

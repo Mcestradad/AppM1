@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/CSS.css">
     <link href='https://fonts.googleapis.com/css?family=Sarala' rel='stylesheet'>
-    <script src="js/contactos.js"></script>
+    
     <style>
         ::placeholder {
             color: #e0e62c;
@@ -32,7 +32,7 @@
             <div class="Grupo" id="contenedor_contactos">
                 <hr>
                 <h4 class="ContactoData perfil"><strong>
-                        Juan Miguel <br>
+                       <a href="FramServPrec.html">Juan Miguel </a> <br>
                     </strong>
                     Itagüí- Área Metropolitana <br> (11)90000-0000
                 </h4>
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div  id="form_contact_div" class="ocultar contenedor_perfil">
+        <div  id="form_contact_div" class="ocultar contenedor_form_contact">
 
             <form action="" id="form_contact">
                 <label for="nombre">Nombre:</label>
@@ -55,12 +55,12 @@
             </form>
 
         </div>
-        <div  id="form_contact_div_eliminar" class="ocultar contenedor_perfil">
+        <div  id="form_contact_div_eliminar" class="ocultar contenedor_form_contact">
 
             <form action="" id="form_contact_eliminar">
                 <label for="nombre">Nombre del contacto a eliminar:</label>
-                <input type="text" id="nombre_contact" name="nombre_contact" required>
-                <button type="submit" id="guardar_contact_btn" onclick="cerrarRepaso()" >Enviar</button>
+                <input type="text" id="nombre_contact2" name="nombre_contact" required>
+                <button type="submit" id="guardar_contact_btn2" onclick="cerrarRepaso()" >Enviar</button>
             </form>
 
         </div>
@@ -80,6 +80,8 @@
             </a>
         </div>
     </div>
+
+    <script src="js/contactos.js"></script>
 </body>
 
 </html>
