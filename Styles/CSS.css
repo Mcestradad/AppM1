@@ -134,7 +134,7 @@ body{
     left: calc(50% - 36px/2 - 159.5px);
     top: calc(50% - 36px/2 - 306.5px);
 
-    background: url(/Img/arrow.png);
+    background: url(../Img/arrow.png);
     filter: drop-shadow(0px 2px 0px #FFFFFF);
     border-radius: 1px;
 }
@@ -369,8 +369,6 @@ button:hover{
     height: 100.33px;
     left: 43px;
     top: 200px;
-
-
     background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
     border-radius: 13px;
 }
@@ -393,8 +391,7 @@ button:hover{
     height: 100.33px;
     left: 250px;
     top: 200px;
-
-
+    
     background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
     border-radius: 13px;
 }
@@ -465,8 +462,6 @@ button:hover{
     height: 100.33px;
     left: 250px;
     top: 440px;
-
-    opacity: 0.5;
     background: linear-gradient(360deg, #9E00FF 0.33%, rgba(175, 4, 255, 0.35356) 54.32%, rgba(179, 31, 249, 0.353559) 57.43%, rgba(179, 31, 249, 0.229167) 99.99%, rgba(179, 31, 249, 0) 100%), linear-gradient(180deg, #240040 0%, rgba(56, 0, 71, 0) 100%);
     border-radius: 13px;
 }
@@ -478,8 +473,9 @@ button:hover{
 
 .TxtCB {
     /* Bachata */
+    
     text-align: center;
-
+    margin-top: 15%;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -1192,3 +1188,11 @@ color: #FDD900;
     left: 6%;
     position: absolute;
 }
+
+.checkpoint{
+    margin: 20% 35.5% 0%;
+
+}
+
+
+

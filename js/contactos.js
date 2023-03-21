@@ -4,10 +4,12 @@ let form;
 let form2;
 let btnEnviar;
 var datos_;
+//let num_elem=[];
 
 window.onload = function () {
     //localStorage.clear();
     contador = localStorage.getItem('contador');
+    //num_elem = localStorage.getItem('list_count');
     if (contador == null) {
         contador = 0;
     }
@@ -15,6 +17,7 @@ window.onload = function () {
     document.getElementById("div_lista").classList.toggle("ocultar");
     form = document.getElementById('form_contact');
     btnEnviar = document.getElementById('guardar_contact_btn"');
+    //console.log(num_elem);
     let temp = localStorage.getItem('contacto_1');
     if (temp !== undefined) {
         console.log(temp);
@@ -63,6 +66,7 @@ function pintarContactos() {
 
     contenedor_contactos.innerHTML = "";
     num = JSON.parse(localStorage.getItem('contador'));
+    //list_count=  localStorage.getItem('list_count');
     console.log(num);
     for (let i = 1; i <= num; i++) {
         console.log("aquí entró #" + i);
@@ -102,6 +106,8 @@ function agregar() {
         };
         crearContacto(contacto);
         contador++;
+        //num_elem.push(contador);
+        //localStorage.setItem('list_count', JSON.stringify(num_elem));
         localStorage.setItem('contador', JSON.stringify(contador));
         // Guardar los datos en el Local Storage
         localStorage.setItem(("contacto_" + contador), JSON.stringify(contacto));
@@ -150,6 +156,9 @@ function eliminar() {
                 localStorage.setItem(patron, nuevoUserDataStr);
                 tmp = 1;
                 break;
+                /*num_elem.splice(i,1);
+                localStorage.removeItem(patron);
+                tmp = 1;*/
             }
         }
         if (tmp == 0) {
