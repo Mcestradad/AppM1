@@ -3,6 +3,7 @@ let contador;
 let form;
 let form2;
 let btnEnviar;
+let lista_contactos;
 var datos_;
 //let num_elem=[];
 
@@ -30,6 +31,8 @@ window.onload = function () {
     }
     agregar();
     eliminar();
+    
+
 }
 
 function abrirRepaso() {
@@ -56,10 +59,23 @@ function cerrarForm() {
 
 function crearContacto(contacto) {
     var nodo = '<h4 id="id_' + contacto.nombre + '" class="ContactoData perfil"><strong>';
-    nodo += '<a href="FramServPrec.html">'+contacto.nombre+'</a><br></strong>';
+    nodo += '<a href="FramServPrec.html" id="contacto_'+contacto.nombre+'">'+contacto.nombre+'</a><br></strong>';
     nodo += contacto.direccion + '<br>';
     nodo += contacto.celular + '</h4><hr>';
     contenedor_contactos.innerHTML += nodo;
+}
+
+function escucharContacto(contacto){
+    localStorage.setItem('contacto_Select', " ");
+    document.getElementById('id_'+contacto.nombre).addEventListener('click', event =>{
+        event.preventDefault();
+        localStorage.setItem('contacto_Select', JSON.stringify(contacto));
+        window.location.href = "FramServPrec.html";
+    });
+}
+
+function obtenerContactos(){
+    
 }
 
 function pintarContactos() {
@@ -79,6 +95,8 @@ function pintarContactos() {
         if (temp.nombre != "vacio") {
             console.log(temp.nombre);
             crearContacto(temp);
+            escucharContacto(temp);
+
         } else {
             console.log("ups")
         };
@@ -105,8 +123,10 @@ function agregar() {
             correo: correo
         };
         crearContacto(contacto);
-        contador++;
+        escucharContacto(contacto);
+
         //num_elem.push(contador);
+        contador++;
         //localStorage.setItem('list_count', JSON.stringify(num_elem));
         localStorage.setItem('contador', JSON.stringify(contador));
         // Guardar los datos en el Local Storage

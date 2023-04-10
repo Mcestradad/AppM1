@@ -11,6 +11,8 @@
     background: #D9DAE7;
     border: 3px solid #000000;
 }
+
+
 /* */
 body{
     display:flex;
@@ -266,6 +268,7 @@ button:hover{
 
 }
 
+
 /* Rectangle 10 */
 
 .RectangLOGIN {
@@ -280,7 +283,7 @@ button:hover{
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.01em;
-
+    cursor: pointer;
     color: #FFF023;
 }
 
@@ -290,7 +293,7 @@ button:hover{
     height: 60px;
     left: 36.42px;
     top: 529.15px;
-
+    cursor: pointer;
     background: #380047;
     border-radius: 15px;
     transform: rotate(-0.03deg);
@@ -604,11 +607,6 @@ button:hover{
 
 
     position: absolute;
-    width: 100px;
-    height: 28px;
-    left: calc(50% - 103px/2 + 1px);
-    top: 328px;
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -1192,6 +1190,17 @@ color: #FDD900;
 .checkpoint{
     margin: 20% 35.5% 0%;
 
+}
+
+#contenedor_contacto_selec{
+    margin-top: 30%;
+}
+
+#lista_servicios_select{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30%;
 }
 
 

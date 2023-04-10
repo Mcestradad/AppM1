@@ -7,7 +7,7 @@ window.onload = function(){
   conectado = JSON.parse(localStorage.getItem('conexion'));
 
   
-
+    //logo_login = document.getElementById("logo_login");
     logo_login.classList.toggle("ocultar");
     frm_login = document.getElementById("frm_login");
     btn_enviar = document.getElementById("btn_enviar");
@@ -70,11 +70,11 @@ function compararClave(){
     frm_login.classList.remove('was-validated');
     frm_login.reset();
     frm_login.classList.add("ocultar");
-    home.classList.remove("ocultar");
+/*     home.classList.remove("ocultar"); */
     logo_login.classList.toggle("ocultar");
     conectado={valor:'false'}
     localStorage.setItem('conexion', JSON.stringify(conectado));
-
+    window.location.href = "home.html";
   }
   else{
     alert("Datos incorrectos");
