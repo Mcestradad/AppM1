@@ -613,21 +613,21 @@ button:hover{
     font-size: 22px;
     line-height: 40px;
     /* or 182% */
-
+    
     letter-spacing: 0.01em;
 
     color: #FEA700;
 
     border: 0px solid #000000;
-    backdrop-filter: blur(2px);
+
 }
 
 .ContactServ {
     position: absolute;
     width: 237px;
     height: 97px;
-    left: calc(50% - 237px/2 - 48px);
-    top: 220px;
+    left: calc(50% - 237px/2 - 48px);   
+    bottom: 88%;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -1193,15 +1193,31 @@ color: #FDD900;
 }
 
 #contenedor_contacto_selec{
-    margin-top: 30%;
+    margin-top: 20%;
+
+}
+
+#contenedor_servicios_select{
+    display: grid;
+    width: 100%;
+
+    
 }
 
 #lista_servicios_select{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 30%;
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    left: 0px;
+    top: 229px;
+    display: grid;
+    margin-top: 17%;
+    justify-items: center;
+    overflow: scroll;
+    
 }
+
+
 
 
 

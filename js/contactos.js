@@ -2,6 +2,7 @@ let contador;
 // Obtener el formulario y el botón de envío
 let form;
 let form2;
+let form3;
 let btnEnviar;
 let lista_contactos;
 var datos_;
@@ -15,8 +16,14 @@ window.onload = function () {
         contador = 0;
     }
     form2 = document.getElementById("form_contact_eliminar");
-    document.getElementById("div_lista").classList.toggle("ocultar");
+
+    form3 = document.getElementById("div_lista");
+    
+    form3.classList.toggle("ocultar");
     form = document.getElementById('form_contact');
+    lista_contactos=document.getElementById("contenedor_contactos");
+    
+    lista_contactos.addEventListener("click", escucharContacto);
     btnEnviar = document.getElementById('guardar_contact_btn"');
     //console.log(num_elem);
     let temp = localStorage.getItem('contacto_1');
@@ -33,15 +40,10 @@ window.onload = function () {
     eliminar();
     
 
+
 }
 
 function abrirRepaso() {
-    document.getElementById("form_contact_div_eliminar").classList.toggle("ocultar");
-    document.getElementById("div_lista").classList.toggle("ocultar");
-    document.getElementById("repaso").classList.toggle("ocultar");
-}
-
-function cerrarRepaso() {
     document.getElementById("form_contact_div_eliminar").classList.toggle("ocultar");
     document.getElementById("div_lista").classList.toggle("ocultar");
     document.getElementById("repaso").classList.toggle("ocultar");
@@ -57,26 +59,32 @@ function cerrarForm() {
     document.getElementById("div_lista").classList.toggle("ocultar");
 }
 
+function cerrarRepaso() {
+    document.getElementById("form_contact_div_eliminar").classList.toggle("ocultar");
+    document.getElementById("div_lista").classList.toggle("ocultar");
+    document.getElementById("repaso").classList.toggle("ocultar");
+}
+
 function crearContacto(contacto) {
     var nodo = '<h4 id="id_' + contacto.nombre + '" class="ContactoData perfil"><strong>';
-    nodo += '<a href="FramServPrec.html" id="contacto_'+contacto.nombre+'">'+contacto.nombre+'</a><br></strong>';
+    nodo += '<button type="submit" id="guardar_contact_btn_' + contacto.id + '" " >' + contacto.nombre + '</button></strong><br>';
     nodo += contacto.direccion + '<br>';
     nodo += contacto.celular + '</h4><hr>';
     contenedor_contactos.innerHTML += nodo;
+
+
 }
 
-function escucharContacto(contacto){
-    localStorage.setItem('contacto_Select', " ");
-    document.getElementById('id_'+contacto.nombre).addEventListener('click', event =>{
-        event.preventDefault();
-        localStorage.setItem('contacto_Select', JSON.stringify(contacto));
-        window.location.href = "FramServPrec.html";
-    });
+function escucharContacto(event) {
+    let nombre = JSON.stringify(event.target.id);
+    console.log(nombre.slice(21).replace(/"$/, ''));
+    let id= nombre.slice(21).replace(/"$/, '')
+    localStorage.setItem('id_seleccion', id);
+    window.location.href = "FramServPrec.html";
 }
 
-function obtenerContactos(){
-    
-}
+
+
 
 function pintarContactos() {
 
@@ -91,12 +99,11 @@ function pintarContactos() {
 
 
         let temp = JSON.parse(localStorage.getItem(patron));
+        temp.select = "false";
         console.log(temp);
         if (temp.nombre != "vacio") {
             console.log(temp.nombre);
             crearContacto(temp);
-            escucharContacto(temp);
-
         } else {
             console.log("ups")
         };
@@ -116,17 +123,20 @@ function agregar() {
         let correo = document.getElementById("email_contact").value;
         let celular = document.getElementById("telefono").value;
         let direccion = document.getElementById("direccion_contact").value;
+        contador++;
         let contacto = {
+            id: "contacto_" + contador,
             nombre: nombre,
             celular: celular,
             direccion: direccion,
-            correo: correo
+            correo: correo,
+            select: "false"
         };
         crearContacto(contacto);
-        escucharContacto(contacto);
+
 
         //num_elem.push(contador);
-        contador++;
+
         //localStorage.setItem('list_count', JSON.stringify(num_elem));
         localStorage.setItem('contador', JSON.stringify(contador));
         // Guardar los datos en el Local Storage
@@ -162,6 +172,7 @@ function eliminar() {
 
                 // Convertir la cadena JSON en un objeto JavaScript
                 var userData = JSON.parse(userDataStr);
+
 
                 // Mostrar el valor actual en la consola
                 console.log("Valor actual de 'userData': ", userData);

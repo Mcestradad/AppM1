@@ -25,7 +25,6 @@ window.onload = function () {
     servicios[8].addEventListener("click", cambiaEstado);
     servicios[9].addEventListener("click", cambiaEstado);
 
-    obtenerEstados();
 }
 
 function cambiaEstado(event) {
@@ -46,6 +45,8 @@ function cambiaEstado(event) {
 
 
 function pintarServicios() {
+    
+  
     for (let i = 1; i <= 9; i++) {
         console.log("aquí entró #" + i);
         let patron = "caja_" + i;
@@ -68,6 +69,9 @@ function obtenerEstados(){
     for (let i=1;i<=9;i++){
         let patron ="caja_"+i;
         let estado= window.localStorage.getItem(patron);
+        if (JSON.parse(estado)==null){
+            estado= 'true'
+        }
         array.push(JSON.parse(estado));
         window.localStorage.setItem('estados',JSON.stringify(array));
     }
