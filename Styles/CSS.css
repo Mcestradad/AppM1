@@ -7,7 +7,7 @@
     position: relative;
     width: 375px;
     height: 667px;
-    
+    overflow: hidden;
     background: #D9DAE7;
     border: 3px solid #000000;
 }
@@ -937,21 +937,15 @@ color: #BA54C2;
 }
 
 .NewGroup{
-    position: absolute;
-width: 201.53px;
-height: 45px;
-left: 20px;
-top: 460px;
-
-font-family: 'Sarala';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-/* or 133% */
-
-letter-spacing: 0.01em;
-
+    position: relative;
+    top: 370px;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
 }
 
 .Lin1{
@@ -1215,6 +1209,18 @@ color: #FDD900;
     justify-items: center;
     overflow: scroll;
     
+}
+
+.pickers{
+    font-size: large;
+    background: rgba(175, 4, 255, 0.35356);
+    width: -webkit-fill-available;
+    margin-top: 0%;
+}
+
+#contenedor_agendados{
+    top: 150px;
+    overflow: auto;
 }
 
 

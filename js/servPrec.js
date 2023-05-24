@@ -5,6 +5,8 @@ let boton;
 let contenedor_contacto_selec= document.getElementById('contenedor_contacto_selec');
 let contenedor_servicios_select= document.getElementById('contenedor_servicios_select');
 window.onload = function () {
+
+    contenedor_servicios_select.addEventListener("click", escucharServicios);
     // Leer los datos del localStorage
     let temp = localStorage.getItem("id_seleccion");
     let contacto = localStorage.getItem(temp);
@@ -31,7 +33,7 @@ function crearNodo(datos) {
 function crearServicio(servicio) {
     var nodo = '<h4 id="id_' + servicio+ '" class="servicioData perfil"><strong>';
     nodo += 'Cuesta COP$80.000,00<br>';
-    nodo += '<button type="submit" id="servicio_seleccionado">' + servicio+ '</button></strong></h4><hr>';
+    nodo += '<button type="submit" id="servicio_'+servicio+'">' + servicio+ '</button></strong></h4><hr>';
     contenedor_servicios_select.innerHTML += nodo;
 }
 
@@ -84,4 +86,12 @@ function pintarServicios() {
 
 
     }
+}
+
+function escucharServicios(event) {
+    let nombre = JSON.stringify(event.target.id);
+    console.log(nombre.slice(10).replace(/"$/, ''));
+    let id= nombre.slice(10).replace(/"$/, '')
+    localStorage.setItem('id__serv_seleccion', id);
+    window.location.href = "calendario.html";
 }
